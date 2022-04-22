@@ -1,3 +1,4 @@
+install.packages("tidyverse")
 library(tidyverse, help, pos = 2, lib.loc = NULL)
 
 # Question: do cars with big engines consume more fuel than cars with smaller engine ?
@@ -7,8 +8,8 @@ library(tidyverse, help, pos = 2, lib.loc = NULL)
 # hwy: car engine efficiency on highway (more is better)
 mpg
 
-# ggplot(data = <DATA>) + 
+# ggplot(data = <DATA>) +
 #  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x=displ, y=hwy, color=class))
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy, color = class))
 
